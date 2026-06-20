@@ -19,11 +19,11 @@ export function AboutSection({ scrollToSection }: { scrollToSection?: (index: nu
               }`}
             >
               <h2 className="mb-3 font-sans text-3xl font-light leading-[1.1] tracking-tight text-foreground md:mb-4 md:text-6xl lg:text-7xl">
-                Создаем
+                Команда
                 <br />
-                будущее
+                за вашим
                 <br />
-                <span className="text-foreground/40">цифровых</span>
+                <span className="text-foreground/40">облаком</span>
               </h2>
             </div>
 
@@ -34,24 +34,24 @@ export function AboutSection({ scrollToSection }: { scrollToSection?: (index: nu
               style={{ transitionDelay: "200ms" }}
             >
               <p className="max-w-md text-sm leading-relaxed text-foreground/90 md:text-lg">
-                Мы команда дизайнеров, разработчиков и технологов, которые создают исключительные цифровые продукты.
+                Мы — инженеры и архитекторы облачных систем с опытом построения отказоустойчивой инфраструктуры.
               </p>
               <p className="max-w-md text-sm leading-relaxed text-foreground/90 md:text-lg">
-                Каждый проект — это возможность исследовать новые решения и раздвигать границы возможного.
+                Держим ваши сервисы онлайн 24/7 и помогаем расти без головной боли с серверами.
               </p>
             </div>
           </div>
 
-          {/* Right side - Stats with creative layout */}
-          <div className="flex flex-col justify-center space-y-6 md:space-y-12">
+          {/* Right side - Team */}
+          <div className="flex flex-col justify-center space-y-6 md:space-y-10">
             {[
-              { value: "150+", label: "Проектов", sublabel: "Реализовано по всему миру", direction: "right" },
-              { value: "8", label: "Лет", sublabel: "Опыта и инноваций", direction: "left" },
-              { value: "12", label: "Наград", sublabel: "Отраслевое признание", direction: "right" },
-            ].map((stat, i) => {
+              { name: "Алексей Орлов", role: "CTO · Облачная архитектура", direction: "right" },
+              { name: "Мария Соколова", role: "Руководитель DevOps", direction: "left" },
+              { name: "Дмитрий Кузнецов", role: "Инженер по безопасности", direction: "right" },
+            ].map((person, i) => {
               const getRevealClass = () => {
                 if (!isVisible) {
-                  return stat.direction === "left" ? "-translate-x-16 opacity-0" : "translate-x-16 opacity-0"
+                  return person.direction === "left" ? "-translate-x-16 opacity-0" : "translate-x-16 opacity-0"
                 }
                 return "translate-x-0 opacity-100"
               }
@@ -59,17 +59,21 @@ export function AboutSection({ scrollToSection }: { scrollToSection?: (index: nu
               return (
                 <div
                   key={i}
-                  className={`flex items-baseline gap-4 border-l border-foreground/30 pl-4 transition-all duration-700 md:gap-8 md:pl-8 ${getRevealClass()}`}
+                  className={`flex items-center gap-4 border-l border-foreground/30 pl-4 transition-all duration-700 md:gap-6 md:pl-8 ${getRevealClass()}`}
                   style={{
                     transitionDelay: `${300 + i * 150}ms`,
                     marginLeft: i % 2 === 0 ? "0" : "auto",
-                    maxWidth: i % 2 === 0 ? "100%" : "85%",
+                    maxWidth: i % 2 === 0 ? "100%" : "90%",
                   }}
                 >
-                  <div className="text-3xl font-light text-foreground md:text-6xl lg:text-7xl">{stat.value}</div>
+                  <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-foreground/15 backdrop-blur-md md:h-16 md:w-16">
+                    <span className="font-sans text-lg font-light text-foreground md:text-2xl">
+                      {person.name.split(" ").map((n) => n[0]).join("")}
+                    </span>
+                  </div>
                   <div>
-                    <div className="font-sans text-base font-light text-foreground md:text-xl">{stat.label}</div>
-                    <div className="font-mono text-xs text-foreground/60">{stat.sublabel}</div>
+                    <div className="font-sans text-lg font-light text-foreground md:text-2xl">{person.name}</div>
+                    <div className="font-mono text-xs text-foreground/60 md:text-sm">{person.role}</div>
                   </div>
                 </div>
               )
@@ -84,10 +88,10 @@ export function AboutSection({ scrollToSection }: { scrollToSection?: (index: nu
           style={{ transitionDelay: "750ms" }}
         >
           <MagneticButton size="lg" variant="primary" onClick={() => scrollToSection?.(4)}>
-            Начать проект
+            Связаться с нами
           </MagneticButton>
           <MagneticButton size="lg" variant="secondary" onClick={() => scrollToSection?.(1)}>
-            Смотреть работы
+            Смотреть тарифы
           </MagneticButton>
         </div>
       </div>

@@ -15,32 +15,32 @@ export function WorkSection() {
           }`}
         >
           <h2 className="mb-2 font-sans text-5xl font-light tracking-tight text-foreground md:text-6xl lg:text-7xl">
-            Проекты
+            Тарифы
           </h2>
-          <p className="font-mono text-sm text-foreground/60 md:text-base">/ Избранные работы</p>
+          <p className="font-mono text-sm text-foreground/60 md:text-base">/ Выберите своё облако</p>
         </div>
 
         <div className="space-y-6 md:space-y-8">
           {[
             {
               number: "01",
-              title: "ТехноСтарт",
-              category: "Корпоративный портал",
-              year: "2024",
+              title: "Старт",
+              category: "2 vCPU · 4 ГБ RAM · 80 ГБ SSD",
+              year: "990 ₽/мес",
               direction: "left",
             },
             {
               number: "02",
-              title: "АльфаТрейд",
-              category: "Финтех платформа",
-              year: "2024",
+              title: "Бизнес",
+              category: "8 vCPU · 16 ГБ RAM · 320 ГБ NVMe",
+              year: "3 490 ₽/мес",
               direction: "right",
             },
             {
               number: "03",
-              title: "МедиаПульс",
-              category: "Медиа сервис",
-              year: "2023",
+              title: "Энтерпрайз",
+              category: "Выделенный кластер · SLA 99.99% · 24/7",
+              year: "от 12 900 ₽/мес",
               direction: "left",
             },
           ].map((project, i) => (

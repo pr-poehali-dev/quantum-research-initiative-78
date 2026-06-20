@@ -17,29 +17,29 @@ export function ServicesSection() {
           <h2 className="mb-2 font-sans text-5xl font-light tracking-tight text-foreground md:text-6xl lg:text-7xl">
             Услуги
           </h2>
-          <p className="font-mono text-sm text-foreground/60 md:text-base">/ Наши компетенции</p>
+          <p className="font-mono text-sm text-foreground/60 md:text-base">/ Облачные решения</p>
         </div>
 
         <div className="grid gap-8 md:grid-cols-2 md:gap-x-16 md:gap-y-12 lg:gap-x-24">
           {[
             {
-              title: "Веб-разработка",
-              description: "Создание современных веб-приложений любой сложности",
+              title: "Облачные серверы",
+              description: "Виртуальные и выделенные серверы с мгновенным масштабированием под нагрузку",
               direction: "top",
             },
             {
-              title: "UI/UX Дизайн",
-              description: "Проектирование удобных и красивых интерфейсов",
+              title: "Облачные хранилища",
+              description: "Надёжное S3-совместимое хранение данных с резервным копированием",
               direction: "right",
             },
             {
-              title: "Мобильные приложения",
-              description: "Кроссплатформенная разработка для iOS и Android",
+              title: "Защита и безопасность",
+              description: "DDoS-защита, шифрование и круглосуточный мониторинг инфраструктуры",
               direction: "left",
             },
             {
-              title: "Консалтинг",
-              description: "Техническая экспертиза и стратегическое планирование",
+              title: "DevOps и поддержка",
+              description: "Настройка CI/CD, миграция в облако и техподдержка 24/7",
               direction: "bottom",
             },
           ].map((service, i) => (
