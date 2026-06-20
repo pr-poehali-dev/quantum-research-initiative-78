@@ -220,11 +220,11 @@ export default function Index() {
           onClick={() => scrollToSection(0)}
           className="flex items-center gap-2 transition-transform hover:scale-105"
         >
-          <img
-            src="https://cdn.poehali.dev/projects/722f9915-a3cb-4da4-88c9-e3c0c83a9f57/bucket/a7f65e20-632a-4e7d-86ac-47ab04a77034.png"
-            alt="Облако — Облачные технологии"
-            className="h-10 w-auto"
-          />
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" className="h-12 w-auto">
+            <rect x="10" y="10" width="380" height="180" rx="50" ry="50" fill="#4A90D9" />
+            <text x="200" y="90" fontFamily="Arial, sans-serif" fontSize="36" fontWeight="bold" fill="white" textAnchor="middle">Облако</text>
+            <text x="200" y="140" fontFamily="Arial, sans-serif" fontSize="20" fill="white" textAnchor="middle">Облачные технологии</text>
+          </svg>
         </button>
 
         <div className="hidden items-center gap-8 md:flex">
