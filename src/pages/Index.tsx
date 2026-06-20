@@ -220,20 +220,11 @@ export default function Index() {
           onClick={() => scrollToSection(0)}
           className="flex items-center gap-2 transition-transform hover:scale-105"
         >
-          <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 400 200" className="h-12 w-auto">
-            <defs>
-              <clipPath id="logo-clip">
-                <rect x="10" y="10" width="380" height="180" rx="50" ry="50" />
-              </clipPath>
-            </defs>
-            <rect x="10" y="10" width="380" height="180" rx="50" ry="50" fill="#4A90D9" />
-            <image
-              href="https://cdn.poehali.dev/projects/722f9915-a3cb-4da4-88c9-e3c0c83a9f57/bucket/a7f65e20-632a-4e7d-86ac-47ab04a77034.png"
-              x="10" y="10" width="380" height="180"
-              preserveAspectRatio="xMidYMid meet"
-              clipPath="url(#logo-clip)"
-            />
-          </svg>
+          <img
+            src="https://cdn.poehali.dev/projects/722f9915-a3cb-4da4-88c9-e3c0c83a9f57/bucket/0845dbeb-d332-44ca-9511-a80ccf36f981.png"
+            alt="Облако — Облачные технологии"
+            className="h-12 w-auto rounded-2xl"
+          />
         </button>
 
         <div className="hidden items-center gap-8 md:flex">
