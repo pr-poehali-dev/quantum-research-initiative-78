@@ -220,12 +220,14 @@ export default function Index() {
           onClick={() => scrollToSection(0)}
           className="flex items-center gap-2 transition-transform hover:scale-105"
         >
-          <img
-            src="https://cdn.poehali.dev/projects/722f9915-a3cb-4da4-88c9-e3c0c83a9f57/bucket/a7f65e20-632a-4e7d-86ac-47ab04a77034.png"
-            alt="Облако — Облачные технологии"
-            className="h-14 w-auto mix-blend-multiply invert brightness-200 drop-shadow-lg"
-            style={{ filter: "invert(1) brightness(1.8) drop-shadow(0 0 8px rgba(255,255,255,0.4))" }}
-          />
+          <div className="flex items-center justify-center rounded-2xl bg-white/10 px-3 py-1.5 backdrop-blur-md ring-1 ring-white/20 transition-all duration-300 hover:bg-white/15 hover:ring-white/30">
+            <img
+              src="https://cdn.poehali.dev/projects/722f9915-a3cb-4da4-88c9-e3c0c83a9f57/bucket/a7f65e20-632a-4e7d-86ac-47ab04a77034.png"
+              alt="Облако — Облачные технологии"
+              className="h-12 w-auto"
+              style={{ filter: "invert(1) brightness(1.8) drop-shadow(0 0 6px rgba(255,255,255,0.3))" }}
+            />
+          </div>
         </button>
 
         <div className="hidden items-center gap-8 md:flex">
