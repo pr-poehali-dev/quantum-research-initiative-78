@@ -220,10 +220,11 @@ export default function Index() {
           onClick={() => scrollToSection(0)}
           className="flex items-center gap-2 transition-transform hover:scale-105"
         >
-          <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-foreground/15 backdrop-blur-md transition-all duration-300 hover:scale-110 hover:bg-foreground/25">
-            <Icon name="Cloud" size={22} className="text-foreground" />
-          </div>
-          <span className="font-sans text-xl font-semibold tracking-tight text-foreground">NimbusCloud</span>
+          <img
+            src="https://cdn.poehali.dev/projects/722f9915-a3cb-4da4-88c9-e3c0c83a9f57/bucket/a7f65e20-632a-4e7d-86ac-47ab04a77034.png"
+            alt="Облако — Облачные технологии"
+            className="h-10 w-auto"
+          />
         </button>
 
         <div className="hidden items-center gap-8 md:flex">
